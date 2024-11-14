@@ -1,0 +1,176 @@
+/* App.css */
+
+/* Transparent navbar */
+.navbar-custom {
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+  backdrop-filter: blur(10px); /* Adds a subtle blur to the background */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: background-color 0.3s ease-in-out;
+  padding: 10px 20px;
+}
+
+/* When scrolling, make the navbar more solid */
+.navbar-custom.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Navbar links */
+.navbar-custom .nav-link {
+  color: white !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* User icon styling */
+.navbar-custom .fa-user {
+  color: #FF4136;
+  cursor: pointer;
+}
+
+.navbar-custom .fa-user:hover {
+  color: #FF4136; /* Change color on hover */
+}
+
+/* Navbar dropdown items */
+.navbar-custom .dropdown-item {
+  color: #333;
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: #FF4136;
+}
+
+/* About section */
+.about-section {
+  min-height: 100vh; /* Cover full viewport height */
+  background: url('../src/assets/images/main.jpeg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* File upload section */
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.file-upload-title {
+  font-size: 2rem;
+  color: #FF4136;
+}
+
+.file-upload-label {
+  font-size: 1.25rem;
+  color: #FF4136;
+}
+
+.file-upload-input {
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+}
+
+.file-upload-button {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.results-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.results-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: red;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin between card sets */
+}
+
+.file-upload-text {
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+}
+
+.result-label {
+  font-weight: bold;
+  color: #FF4136;
+}
+
+.result-text {
+  color: white;
+  margin-left: 10px;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.toxicity-progress-bar {
+  height: 30px;
+  font-size: 1.25rem;
+  color: #FF4136;
+}
+.nav-title {
+  color: #FF4136 !important;
+}
+/* RedFlags title and subtitle */
+.redflags-title {
+  font-size: 5rem;
+  color: #FF4136;
+}
+
+.redflags-subtitle {
+  font-size: 2rem;
+  color: #FF4136;
+}
+
+/* Transparent button with red border */
+.transparent-button {
+  background-color: transparent;
+  border: 2px solid #FF4136;
+  color: #FF4136;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.transparent-button:hover {
+  background-color: #FF4136;
+  color: black;
+}
+
+/* Navbar font styling */
+.navbar-custom .nav-link {
+  font-size: 1.25rem; /* Increase font size for navbar links */
+  font-weight: 500;
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.5rem; /* Increase font size for brand */
+  font-weight: 600;
+}
+
+.navbar-custom .dropdown-item {
+  font-size: 1.2rem; /* Increase font size for dropdown items */
+}
+
+.navbar-custom .fa-user {
+  font-size: 1.5rem; /* Adjust icon size if needed */
+}
